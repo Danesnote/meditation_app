@@ -37,6 +37,13 @@ dependencies:
   provider: ^6.1.1  # 상태 관리를 위한 패키지
   audioplayers: ^6.8.1  # 알림음 재생을 위한 패키지
   clock: ^1.1.2  # 테스트에서 시간을 조작할 수 있는 현재 시각
+  shared_preferences: ^2.5.6
+  flutter_local_notifications: ^22.3.2
+  timezone: ^0.11.2
+  flutter_timezone: ^5.1.1
+  wakelock_plus: ^1.8.1
+  flutter_tts: ^4.2.5
+  health: ^13.3.2
 
 dev_dependencies:
   flutter_test:

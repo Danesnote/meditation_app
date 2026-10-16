@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 알림 소리로만 쓰이는 bell.wav가 릴리스 빌드에서 제거되지 않게 한다. -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@raw/bell" />
