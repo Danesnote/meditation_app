@@ -3,6 +3,8 @@
 Flutter로 만든 명상 타이머 앱입니다. 시간을 정하고 앉아 숨에 집중하는 데 필요한 타이머, 종소리, 배경 소리, 가이드, 기록을 한곳에 담았습니다.
 
 > 빌드·배포 전 확인할 점과 플랫폼별 제한은 [CAVEATS.md](CAVEATS.md)에 정리되어 있습니다.
+>
+> 브라우저용 웹 버전(React + TypeScript, PWA)은 [webapp/](webapp/README.md)에 있습니다.
 
 ## 기능
 

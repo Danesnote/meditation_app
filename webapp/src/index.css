@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+/* 다크 모드는 <html class="dark">로 켠다 (시스템 / 라이트 / 다크 선택을 위해). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 색은 토큰으로만 쓴다. 라이트·다크 값은 아래 :root / .dark에서 바뀐다. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-soft: var(--primary-soft);
+  --color-track: var(--track);
+  --font-sans: system-ui, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+/* 차분한 청록 */
+:root {
+  color-scheme: light;
+  --bg: #f4f8f8;
+  --surface: #ffffff;
+  --surface-2: #e5eeee;
+  --ink: #172426;
+  --muted: #56676a;
+  --line: #c9d6d6;
+  --primary: #3f6f75;
+  --on-primary: #ffffff;
+  --primary-soft: #cfe5e6;
+  --track: #dbe6e6;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #0f1617;
+  --surface: #172123;
+  --surface-2: #213033;
+  --ink: #e3eeee;
+  --muted: #9db0b2;
+  --line: #33474a;
+  --primary: #8cc7cd;
+  --on-primary: #00363b;
+  --primary-soft: #1f4a4f;
+  --track: #273739;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+}
